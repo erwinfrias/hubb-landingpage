@@ -1,0 +1,46 @@
+{
+  "name": "webpack-starter-kit",
+  "version": "2.0.0",
+  "description": "A starter kit workflow using Webpack, PUG, SCSS, SMACSS-ITCSS, BEM, PostCSS & Babel.",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server --mode development --open",
+    "dev": "rimraf public && webpack --mode development",
+    "build": "rimraf public && webpack --mode production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/erwcode/webpack-starter-kit.git"
+  },
+  "author": "ErwCode Technologies <contacto@erwcode.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/erwcode/webpack-starter-kit/issues"
+  },
+  "homepage": "https://github.com/erwcode/webpack-starter-kit#readme",
+  "devDependencies": {
+    "@babel/core": "^7.12.13",
+    "@babel/plugin-transform-spread": "^7.12.13",
+    "@babel/polyfill": "^7.12.1",
+    "@babel/preset-env": "^7.12.13",
+    "autoprefixer": "^9.8.6",
+    "babel-loader": "^8.2.2",
+    "css-loader": "^2.1.1",
+    "file-loader": "^3.0.1",
+    "html-loader": "^0.5.5",
+    "html-webpack-plugin": "^3.2.0",
+    "image-webpack-loader": "^4.6.0",
+    "mini-css-extract-plugin": "^0.6.0",
+    "node-sass": "^4.14.1",
+    "postcss-loader": "^3.0.0",
+    "pug": "^2.0.4",
+    "pug-loader": "^2.4.0",
+    "resolve-url-loader": "^3.1.2",
+    "rimraf": "^2.7.1",
+    "sass-loader": "^7.3.1",
+    "style-loader": "^0.23.1",
+    "webpack": "^4.46.0",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.2"
+  }
+}

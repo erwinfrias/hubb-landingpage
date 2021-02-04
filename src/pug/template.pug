@@ -1,0 +1,53 @@
+block variables
+  //- Meta Tags HTML
+  - let siteName = 'ErwCode', pageTitle;
+
+  //- Meta Tags SEO
+  - let metaDescription;
+
+  //- OpenGraph Protocol
+  - let ogUrl, ogImage;
+
+doctype html
+html(lang="es-MX")
+  head
+    //- Meta Tags
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible", content="ie=edge")
+    if pageTitle === 'Home'
+      title= `${siteName} | Tecnologías de la Información & Marketing Digital`
+    else
+      title= `${pageTitle} | ${siteName}`
+    meta(name="description" content=metaDescription)
+    meta(name="author" content="ErwCode Technologies")
+    meta(name="robots" content="index, follow")
+    meta(name="theme-color" content="#0C3455")
+    //- Open Graph Protocol
+    meta(property="og:locate" content="es_MX")
+    meta(property="og:locate:alternate" content="es_CO")
+    meta(property="og:type" content="website")
+    if pageTitle === 'Home'
+      meta(property="og:title" content = `${siteName} | Tecnologías de la Información & Marketing Digital`)
+    else
+      meta(property="og:title" content = `${pageTitle} | ${siteName}`)
+    meta(property="og:description" content=metaDescription)
+    meta(property="og:url" content=ogUrl)
+    meta(property="og:site_name" content="ErwCode")
+    meta(property="og:image" content=ogImage)
+    meta(property="og:image:alt" content=`Webpack Starter Kit by ${siteName}`)
+    //- Google Tag Manager
+
+    //- Links
+    link(rel="shortcut icon" href="./assets/images/favicon.png")
+  body
+    //- Google Tag Manager (noscript)
+
+
+    //- Menu Section
+
+
+    //- Body Section
+    block body
+
+    //- Footer Section

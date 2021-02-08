@@ -3,11 +3,11 @@
 
 html {
   box-sizing: border-box;
-  font-family: var(--primary-font), sans-serif;
+  font-family: var(--primary-font);
   font-size: var(--font-size);
   line-height:  var(--line-height);
   color: var(--text-color-black);
-  background-color: var(--primary-color);
+  background-color: var(--secondary-color);
   scroll-behavior: smooth;
 }
 

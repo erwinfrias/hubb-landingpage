@@ -1,7 +1,7 @@
 {
   "name": "webpack-starter-kit",
-  "version": "0.1.0",
-  "description": "A starter kit workflow using Webpack, PUG, SCSS, SMACSS-ITCSS, BEM, PostCSS & Babel.",
+  "version": "0.2.0",
+  "description": "Hubb Landing Page using Webpack, PUG, SCSS, SMACSS-ITCSS, BEM, PostCSS & Babel.",
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --mode development --open",
@@ -10,14 +10,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/erwcode/webpack-starter-kit.git"
+    "url": "git+https://github.com/erwinfriasmtz/hubb-landingpage.git"
   },
   "author": "ErwCode Technologies <contacto@erwcode.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/erwcode/webpack-starter-kit/issues"
+    "url": "https://github.com/erwinfriasmtz/hubb-landingpage/issues"
   },
-  "homepage": "https://github.com/erwcode/webpack-starter-kit#readme",
+  "homepage": "https://github.com/erwinfriasmtz/hubb-landingpage#readme",
   "devDependencies": {
     "@babel/core": "^7.12.13",
     "@babel/plugin-transform-spread": "^7.12.13",

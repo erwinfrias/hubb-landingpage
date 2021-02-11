@@ -11,6 +11,14 @@ import logo from './images/hubb-logo.svg'
 import bgMenu from './images/bg-menu.png'
 import columnLeft from './images/column.png'
 import witheFloor from './images/white-floor.svg'
+import appStore from './images/app-store.svg'
+import googlePlay from './images/google-play.svg'
+import fissure from './images/fissure.png'
+
+import emojiPartyBoy from './images/emoji-party-boy.svg'
+import emojiPartyGirl from './images/emoji-party-girl.svg'
+
+import screenMap from './images/app-map.png'
 
 
 

@@ -1,0 +1,109 @@
+/* ********** Hero Component ********** */
+.hero {
+  background: var(--primary-color) url('/assets/images/fissure.png') no-repeat;
+  background-size: 90%;
+  background-position: -80% bottom;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @include mq(m) {
+    background-size: 70%;
+    background-position: -80% bottom;
+  }
+
+  @include mq(l) {
+    background-size: 60%;
+    background-position: -70% bottom;
+  }
+
+  // .hero__container
+  &__container {
+    position: relative;
+    width: 90%;
+    margin: 0 auto;
+    color: var(--secondary-color);
+
+    @include mq(m) {
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  // .hero__item
+  &__item {
+
+    &:last-child {
+      display: none;
+
+      @include mq(m) { display: block; position: relative; justify-self: center; }
+    }
+  }
+
+  // .hero__title
+  &__title {
+    font-size: 4rem;
+    line-height: 5rem;
+    text-transform: uppercase;
+
+    // .hero__title > span
+    > span { color: var(--tertiary-color); }
+
+    @include mq(m) { font-size: 5.5rem; line-height: 6rem; }
+  }
+
+  // .hero__text
+  &__text {
+    font-size: 2.1rem;
+    font-family: var(--secondary-font);
+    margin-top: 3rem;
+
+    @include mq(m) { margin-top: 4rem; }
+  }
+
+  // .hero__download
+  &__download {
+    margin-top: 5rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    @include mq(m) {
+      margin-top: 9rem;
+      justify-content: flex-start;
+
+      .hero__link:last-child { margin-left: 3rem; }
+    }
+  }
+
+  // .hero__store
+  &__store {
+    width: 15rem;
+    height: auto;
+
+    @include mq(l) { width: 18rem; }
+  }
+
+  // .hero__emoji
+  &__emoji {
+    position: absolute;
+    width: 15rem;
+    height: auto;
+
+    // .hero__emoji--top
+    &--top { top: 0; left: 0; }
+
+    // .hero__emoji--bottom
+    &--bottom { bottom: 0; right: 0;}
+  }
+
+  // .hero__app
+  &__app {
+    height: auto;
+
+    @include mq(l) { height: 65rem; }
+  }
+}

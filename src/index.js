@@ -19,6 +19,9 @@ import emojiPartyBoy from './images/emoji-party-boy.svg'
 import emojiPartyGirl from './images/emoji-party-girl.svg'
 
 import screenMap from './images/app-map.png'
+import screenChat from './images/app-chat.png'
+import screenLogin from './images/app-login.png'
+import screenHangout from './images/app-hangout.png'
 
 
 

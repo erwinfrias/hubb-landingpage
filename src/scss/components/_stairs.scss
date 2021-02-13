@@ -1,0 +1,45 @@
+/* ********** Stairs Component ********** */
+.stairs {
+  height: 30rem;
+
+  @include mq(m) {
+    height: 50rem;
+    background-color: var(--secondary-color);
+    background-image: url('/assets/images/hole.png'), url('/assets/images/columns.png');
+    background-repeat: no-repeat;
+    background-size: 25%, 35%;
+    background-position: 48% 25%, 20% bottom;
+  }
+
+  @include mq(l) { height: 90rem; }
+
+  // .stairs__container
+  &__container {
+    position: relative;
+  }
+
+  // .stairs__tumblr
+  &__tumblr {
+    position: absolute;
+    top: -5rem;
+    z-index: var(--z-index-down);
+
+    @include mq(l) { top: -10rem; }
+
+    // .stairs__tumblr--left
+    &--left {
+      left: -5%;
+      width: 50%;
+
+      @include mq(m) { left: 0; width: 40%; }
+    }
+
+    // .stairs__tumblr--left
+    &--right {
+      right: 0;
+      width: 30rem;
+
+      @include mq(m) { top: -8rem; width: 60%; }
+    }
+  }
+}

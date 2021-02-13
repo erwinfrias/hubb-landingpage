@@ -23,6 +23,11 @@ import screenChat from './images/app-chat.png'
 import screenLogin from './images/app-login.png'
 import screenHangout from './images/app-hangout.png'
 
+import stairsLeft from './images/stair-left.png'
+import stairsRight from './images/stair-right.png'
+import stairsColumns from './images/columns.png'
+import stairsHole from './images/hole.png'
+
 
 
 /*  CSS

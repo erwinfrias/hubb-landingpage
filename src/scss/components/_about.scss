@@ -1,0 +1,91 @@
+/* ********** About Component ********** */
+.about {
+  position: relative;
+  background-color: var(--primary-color);
+  height: 100vh;
+
+  // .about__container
+  &__container {
+    padding-top: 10rem;
+    color: var(--secondary-color);
+
+    @include mq(m) { padding-top: 20vh; }
+    @include mq(m) { padding-top: 18vh; }
+  }
+
+  // .about__title
+  &__title {
+    position: relative;
+    display: inline-block;
+    color: var(--secondary-color);
+    font-size: 4.5rem;
+    text-transform: uppercase;
+    -webkit-text-stroke: 0.1px var(--primary-color);
+
+    &::before, &::after {
+      content: attr(data-about);
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+    &::before {
+      color: var(--quaternary-color);
+      z-index: 1;
+      -webkit-text-stroke: 0.1px var(--primary-color);
+      transform: translate(.5rem, -.5rem);
+    }
+
+    &::after {
+      color: var(--tertiary-color);
+      z-index: 2;
+      -webkit-text-stroke: 0.1px var(--primary-color);
+      transform: translate(1rem, -1rem);
+    }
+
+    @include mq(m) { font-size: 6rem; }
+  }
+
+  // .about__description
+  &__description {
+    margin-top: 2rem;
+    font-size: 2rem;
+    font-family: var(--secondary-font);
+
+
+    // .about__description span
+    span { color: var(--quaternary-color); font-weight: bolder; }
+
+    @include mq(m) { font-size: 2.5rem; line-height: 3.5rem;}
+    @include mq(l) { width: 50vw; }
+  }
+
+  // .about__image
+  &__image {
+    position: absolute;
+
+    // .about__image--left
+    &--left {
+      left: 0;
+      bottom: 0;
+      width: 50%;
+
+      @include mq(m) { width: 30%; }
+      @include mq(l) { width: 18%; }
+    }
+
+    // .about__image--right
+    &--right {
+      display: none;
+
+      @include mq(m) {
+        display: block;
+        right: 0;
+        bottom: 0;
+        width: 80%;
+      }
+
+      @include mq(l) { width: 55%; }
+    }
+  }
+}

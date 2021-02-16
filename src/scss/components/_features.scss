@@ -35,9 +35,9 @@
   &__title {
     position: relative;
     display: inline-block;
-    margin-bottom: 2rem;
     color: var(--secondary-color);
-    font-size: 4.5rem;
+    font-size: 5rem;
+    text-transform: uppercase;
     -webkit-text-stroke: 0.1px var(--primary-color);
 
     &::before, &::after {

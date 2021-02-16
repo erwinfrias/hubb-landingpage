@@ -68,6 +68,10 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './src/pug/pages/index.pug'
     }),
+    new HtmlWebpackPlugin({
+      template: './src/pug/pages/about.pug',
+      filename: 'about.html'
+    }),
     new MiniCssExtractPlugin({
       filename: './assets/css/main.css'
     })

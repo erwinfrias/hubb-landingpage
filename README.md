@@ -1,11 +1,11 @@
-# Xplans Landing Page
+# Hubb Landing Page MVP
 
 [![npm][npm]][npm-url]
 [![node][node]][node-url]
 
-This repository contains the Front-End code for Xplans Landing Page project.
+This repository contains the Huub's Front-End code to validate the Minimum Viable Product.
 
-![Xplans Landing Page Mockup](./src/images/mockup.png)
+![Hubb LP Mockup](./src/images/mockup.png)
 
 > Front-End workflow using Webpack, PUG, SASS, SMACSS-ITCSS, BEM, PostCSS & Babel.
 
@@ -14,7 +14,7 @@ This repository contains the Front-End code for Xplans Landing Page project.
 Clone the repository to access all project history:
 
 ```sh
-git clone https://github.com/erwinfriasmtz/xplans-landingpage.git
+git clone https://github.com/erwinfriasmtz/hubb-landingpage.git
 ```
 
 Once the repository was cloned, open directory location from console and install node packages:

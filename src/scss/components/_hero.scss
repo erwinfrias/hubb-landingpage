@@ -21,8 +21,6 @@
   // .hero__container
   &__container {
     position: relative;
-    width: 90%;
-    margin: 0 auto;
     color: var(--secondary-color);
 
     @include mq(m) {
@@ -35,11 +33,12 @@
 
   // .hero__item
   &__item {
-
+    // .hero__item:last-child
     &:last-child {
       display: none;
 
       @include mq(m) { display: block; position: relative; justify-self: center; }
+      @include mq(l) { margin-top: 8.3rem; }
     }
   }
 
@@ -94,16 +93,16 @@
     height: auto;
 
     // .hero__emoji--top
-    &--top { top: 0; left: 0; }
+    &--top { top: 0; left: 0; @include mq(l) { left: -15%; } }
 
     // .hero__emoji--bottom
-    &--bottom { bottom: 0; right: 0;}
+    &--bottom { bottom: 0; right: 0; @include mq(l) { right: -10%; } }
   }
 
   // .hero__app
   &__app {
     height: auto;
 
-    @include mq(l) { height: 65rem; }
+    @include mq(l) { height: 60rem; }
   }
 }

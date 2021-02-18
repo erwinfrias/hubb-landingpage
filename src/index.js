@@ -31,6 +31,11 @@ import stairsHole from './images/hole.png'
 import aboutPillar from './images/pillar.png'
 import aboutStairs from './images/bottom-stairs.png'
 
+import iconFacebook from './images/icon-facebook.svg'
+import iconInstagram from './images/icon-instagram.svg'
+import iconTwitter from './images/icon-twitter.svg'
+import iconLinkedIn from './images/icon-linkedin.svg'
+import fissureFooter from './images/fissure-footer.png'
 
 
 /*  CSS

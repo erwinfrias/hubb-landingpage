@@ -1,0 +1,93 @@
+/* ********** Hero Component ********** */
+.footer {
+  padding: 3rem 0;
+  background: var(--secondary-color) url('/assets/images/fissure-footer.png') no-repeat;
+  background-size: 80%;
+  background-position: right bottom;
+
+  @include mq(m) { background-size: 40%; }
+  @include mq(l) { background-size: 30%; }
+
+  // .footer__container
+  &__container {
+    text-align: center;
+
+    @include mq(m) {
+      text-align: left;
+      display: grid;
+      grid-template-columns: 30% repeat(3,1fr);
+      justify-content: center;
+      align-items: start;
+      column-gap: 2rem;
+    }
+
+    @include mq(l) { grid-template-columns: 40% repeat(3,1fr); }
+  }
+
+  // .footer__item
+  &__item {
+    margin-bottom: 3rem;
+
+    // .footer__item:last-child
+    &:last-child { margin-bottom: 0; }
+
+    @include mq(m) { margin-bottom: 0; }
+  }
+
+  // .footer__description
+  &__description {
+    margin: 3rem 0;
+    font-size: 2rem;
+    font-family: var(--secondary-font);
+
+    @include mq(m) { font-size: 1.6rem; }
+  }
+
+  // .footer__social
+  &__social {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    // .footer__social img
+    img { width: 3rem; }
+
+    @include mq(m) {
+      justify-content: flex-start;
+
+      .footer__link {
+        margin-right: 2rem;
+
+        &:last-child { margin-right: 0; }
+
+        img { width: 2rem; }
+      }
+    }
+  }
+
+  // .footer__title
+  &__title {
+    font-size: 3.5rem;
+    color: var(--tertiary-color);
+    -webkit-text-stroke: .5px var(--primary-color);
+
+    @include mq(m) { font-size: 3rem; }
+  }
+
+  // .footer__list
+  &__list { margin: 2rem 0; }
+
+  // .footer__link
+  &__link {
+    font-size: 2rem;
+    font-family: var(--secondary-font);
+    padding: 1rem;
+    color: var(--primary-color);
+    cursor: pointer;
+
+    // .footer__link:hover
+    &:hover { color: var(--quaternary-color); font-weight: bold; }
+
+    @include mq(m) { font-size: 1.6rem; padding: 1rem 1rem 1rem 0; }
+  }
+}

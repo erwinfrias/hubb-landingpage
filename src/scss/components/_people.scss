@@ -1,0 +1,108 @@
+/* ********** People Component ********** */
+.people {
+  padding: 3rem 0;
+  background-color: var(--primary-color);
+  height: 100%;
+
+  // .people__container
+  &__container {
+    text-align: center;
+
+    @include mq(l) { width: 70%; }
+  }
+
+  // .people__item
+  &__item {
+    // .people__item:first-child
+    &:first-child {
+      @include mq(m) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+
+    // .people__item:last-child
+    &:last-child {
+      @include mq(m) {
+        margin: 3rem 0;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
+
+  // .people__title
+  &__title {
+    color: var(--secondary-color);
+    font-size: 3rem;
+
+    @include mq(m) { font-size: 3.5rem; margin-right: 1rem; }
+    @include mq(l) { font-size: 5rem; margin-right: 2rem; }
+  }
+
+  // .people__logo
+  &__logo {
+    width: 20rem;
+
+    @include mq(m) { width: 22rem; margin-top: 2rem; }
+    @include mq(l) { width: 33rem; }
+  }
+
+  // .people__content
+  &__content {
+    position: relative;
+    text-align: center;
+
+    // .people__content:nth-child(2)
+    &:nth-child(2) { .people__emoji { display: none; } }
+
+    @include mq(m) {
+      padding: 15rem 0;
+      &:nth-child(2) {
+        align-self: start;
+        padding: 0;
+
+        .people__emoji { position: relative; display: block; width: 17rem; margin: auto; }
+      }
+    }
+  }
+
+  // .people__activity
+  &__activity {
+    display: block;
+    color: var(--tertiary-color);
+    font-size: 4rem;
+    margin: 2rem 0;
+
+    @include mq(m) { margin: 0; }
+    @include mq(l) { font-size: 5rem; }
+  }
+
+  // .people__emoji
+  &__emoji {
+    width: 15rem;
+
+    @include mq(m) {
+      position: absolute;
+      overflow: hidden;
+
+      // .peope__emoji--top-left
+      &--top-left { top: 0; left: 5rem; }
+
+      // .peope__emoji--top-right
+      &--top-right { top: 0; right: 0; }
+
+      // .people__emoji--bottom-left
+      &--bottom-left { bottom: 0; left: -5rem; }
+
+      // .people__emoji--bottom-right
+      &--bottom-right { bottom: -5rem; right: -5rem; }
+
+      // .people__emoji--bottom
+      &--bottom-right { bottom: -5rem; right: 0; }
+    }
+  }
+}

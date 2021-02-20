@@ -30,6 +30,7 @@
 @import 'components/hero';
 @import 'components/features';
 @import 'components/stairs';
+@import 'components/people';
 @import 'components/about';
 @import 'components/footer';
 
@@ -38,7 +39,7 @@
 /*  State Rules
     How components looks in different dynamic situations.
 \*-------------------------------------------------------*/
-@import 'state/is-active';
+@import 'state/is-none';
 
 
 /*  Theme Rules

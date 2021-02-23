@@ -15,6 +15,7 @@ import witheFloor from './images/white-floor.svg'
 import appStore from './images/app-store.svg'
 import googlePlay from './images/google-play.svg'
 import fissure from './images/fissure.png'
+import fissureFooter from './images/fissure-footer.png'
 
 import emojiPartyBoy from './images/emoji-party-boy.svg'
 import emojiPartyGirl from './images/emoji-party-girl.svg'
@@ -44,8 +45,10 @@ import iconFacebook from './images/icon-facebook.svg'
 import iconInstagram from './images/icon-instagram.svg'
 import iconTwitter from './images/icon-twitter.svg'
 import iconLinkedIn from './images/icon-linkedin.svg'
-import fissureFooter from './images/fissure-footer.png'
+import iconSend from './images/icon-send.svg'
 
+import pillarsGroup from './images/pillars.png'
+import pillarsMedium from './images/pillars-medium.png'
 
 /*  CSS
 \*-------------------------------------------------------*/

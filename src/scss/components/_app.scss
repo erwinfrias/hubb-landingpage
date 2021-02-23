@@ -1,0 +1,85 @@
+/* ********** App Component ********** */
+.app {
+  background-color: var(--primary-color);
+  clip-path: polygon(50% 5%, 100% 0, 100% 100%, 0 100%, 0 0);
+  padding-top: 8rem;
+  padding-bottom: 3rem;
+
+  // .app__container {
+  &__container {
+    text-align: center;
+    color: var(--text-color-white);
+    span { color: var(--tertiary-color); }
+  }
+
+  // .app__title
+  &__title {
+    font-size: 3rem;
+    text-transform: uppercase;
+
+    @include mq(m) { font-size: 3.5rem; }
+    @include mq(l) { font-size: 4rem; width: 85%; margin: auto; }
+  }
+
+  // .app__wrapper
+  &__wrapper {
+    margin-top: 3rem;
+
+    @include mq(m) {
+      margin-top: 6rem;
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+      justify-content: center;
+      align-items: start;
+    }
+  }
+
+  // .app__item
+  &__item {
+    &:first-child { display: none; }
+    &:last-child { display: none; }
+
+    @include mq(m) {
+      &:first-child { display: block; text-align: left; width: 80%; }
+      &:nth-child(2) { justify-self: center; }
+      &:last-child { display: block; text-align: right; width: 80%; justify-self: end;}
+    }
+  }
+
+  // .app__feature
+  &__feature {
+    position: relative;
+    display: inline-block;
+    font-size: 4rem;
+    line-height: 5rem;
+    color: var(--text-color-black);
+    -webkit-text-stroke: 0.1px var(--secondary-color);
+    margin-bottom: 3rem;
+
+    &::before {
+      content: attr(data-feature);
+      position: absolute;
+      top: 0;
+      left: 0;
+      color: var(--tertiary-color);
+      z-index: 1;
+      -webkit-text-stroke: 0.1px var(--primary-color);
+      transform: translate(.3rem, -.3rem);
+    }
+
+    @include mq(l) { font-size: 5rem; }
+  }
+
+  // .app__list
+  &__list {
+    font-size: 2.5rem;
+    line-height: 3rem;
+    margin-bottom: 2rem;
+    text-transform: capitalize;
+
+    @include mq(l) {
+      font-size: 3rem;
+      margin-top: 6rem;
+    }
+  }
+}

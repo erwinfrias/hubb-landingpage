@@ -54,6 +54,7 @@ import pillarsMedium from './images/pillars-medium.png'
 \*-------------------------------------------------------*/
 import scss from './scss/main.scss'
 import 'aos/dist/aos.css'
+import 'animate.css'
 
 
 

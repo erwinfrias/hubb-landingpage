@@ -58,6 +58,7 @@
     }
 
     @include mq(l) { font-size: 5rem; }
+    @include mq(xl) { font-size: 6rem; }
   }
 
   // .newsletter__form
@@ -74,6 +75,7 @@
 
     @include mq(m) { width: 50%; }
     @include mq(l) { width: 40%; }
+    @include mq(xl) { width: 50rem; }
   }
 
   // .newsletter__email

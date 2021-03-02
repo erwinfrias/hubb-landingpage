@@ -72,12 +72,12 @@
 
   // .people__activity
   &__activity {
-    display: block;
+    display: none;
     color: var(--tertiary-color);
     font-size: 4rem;
     margin: 2rem 0;
 
-    @include mq(m) { margin: 0; }
+    @include mq(m) { display: block; margin: 0; }
     @include mq(l) { font-size: 5rem; }
   }
 

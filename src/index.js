@@ -31,7 +31,7 @@ import screenMap from './images/app-map.png'
 import screenChat from './images/app-chat.png'
 import screenLogin from './images/app-discover.png'
 import screenHangout from './images/app-hangout.png'
-import screenPlans from './images/app-plans.png'
+import screenTicket from './images/app-ticket.png'
 
 import stairsLeft from './images/stair-left.png'
 import stairsRight from './images/stair-right.png'

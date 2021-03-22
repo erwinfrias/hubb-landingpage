@@ -37,8 +37,9 @@
   // .footer__description
   &__description {
     margin: 3rem 0;
-    font-size: 2rem;
+    font-size: 2.2rem;
     font-family: var(--secondary-font);
+    font-weight: bolder;
 
     @include mq(m) { font-size: 1.6rem; }
   }

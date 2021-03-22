@@ -29,7 +29,7 @@ import emojiVicky from './images/emoji-vicky.svg'
 
 import screenMap from './images/app-map.png'
 import screenChat from './images/app-chat.png'
-import screenLogin from './images/app-login.png'
+import screenLogin from './images/app-discover.png'
 import screenHangout from './images/app-hangout.png'
 import screenPlans from './images/app-plans.png'
 

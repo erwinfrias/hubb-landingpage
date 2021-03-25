@@ -1,0 +1,10 @@
+<IfModule mod_rewrite.c>
+
+  # FORCE_SSL_REDIRECT
+  RewriteEngine On
+  RewriteCond %{HTTPS} off [OR]
+  RewriteCond %{HTTP_HOST} ^www\. [NC]
+  RewriteCond %{HTTP_HOST} ^(?:www\.)?(.+)$ [NC]
+  RewriteRule ^ https://hubb-me.com%{REQUEST_URI} [L,NE,R=301]
+
+</IfModule>

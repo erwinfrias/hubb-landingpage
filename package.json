@@ -1,6 +1,6 @@
 {
   "name": "hubb-landingpage",
-  "version": "0.11.0",
+  "version": "0.12.0",
   "description": "Hubb Landing Page using Webpack, PUG, SCSS, SMACSS-ITCSS, BEM, PostCSS & Babel.",
   "main": "index.js",
   "scripts": {

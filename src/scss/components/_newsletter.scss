@@ -1,10 +1,9 @@
 /* ********** Newsletter Component ********** */
 .newsletter {
   margin-top: -1px;
+
   // .newsletter__container
-  &__container {
-    text-align: center;
-  }
+  &__container { text-align: center; }
 
   // .newsletter__item
   &__item {
@@ -30,31 +29,35 @@
   &__title {
     position: relative;
     display: inline-block;
-    color: var(--secondary-color);
+    color: var(--tertiary-color);
     font-size: 4rem;
     text-transform: uppercase;
-    -webkit-text-stroke: 0.1px var(--primary-color);
     margin-bottom: 2rem;
 
-    &::before, &::after {
-      content: attr(data-newsletter);
-      position: absolute;
-      top: 0;
-      left: 0;
-    }
-
-    &::before {
-      color: var(--quaternary-color);
-      z-index: 1;
+    @include mq(m) {
+      color: var(--text-color-white);
       -webkit-text-stroke: 0.1px var(--primary-color);
-      transform: translate(.5rem, -.5rem);
-    }
 
-    &::after {
-      color: var(--tertiary-color);
-      z-index: 2;
-      -webkit-text-stroke: 0.1px var(--primary-color);
-      transform: translate(1rem, -1rem);
+      &::before, &::after {
+        content: attr(data-newsletter);
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+
+      &::before {
+        color: var(--quaternary-color);
+        z-index: 1;
+        -webkit-text-stroke: 0.1px var(--primary-color);
+        transform: translate(.5rem, -.5rem);
+      }
+
+      &::after {
+        color: var(--tertiary-color);
+        z-index: 2;
+        -webkit-text-stroke: 0.1px var(--primary-color);
+        transform: translate(1rem, -1rem);
+      }
     }
 
     @include mq(l) { font-size: 5rem; }

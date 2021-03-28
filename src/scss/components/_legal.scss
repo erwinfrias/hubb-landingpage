@@ -25,25 +25,37 @@
     color: var(--text-color-white);
     -webkit-text-stroke: 0.1px var(--primary-color);
 
-    &::before, &::after {
-      content: attr(data-terms);
-      position: absolute;
-      top: 0;
-      left: 0;
+    // .legal__title--terms
+    &--terms {
+      &::before, &::after { content: attr(data-terms); }
     }
 
-    &::before {
-      color: var(--quaternary-color);
-      z-index: 1;
-      -webkit-text-stroke: 0.1px var(--primary-color);
-      transform: translate(.5rem, -.5rem);
+    // .legal__title--privacy
+    &--privacy {
+      &::before, &::after { content: attr(data-privacy); }
     }
 
-    &::after {
-      color: var(--tertiary-color);
-      z-index: 2;
-      -webkit-text-stroke: 0.1px var(--primary-color);
-      transform: translate(1rem, -1rem);
+    // .legal__title--terms, .legal__title--privacy
+    &--terms, &--privacy {
+      &::before, &::after {
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+
+      &::before {
+        color: var(--quaternary-color);
+        z-index: 1;
+        -webkit-text-stroke: 0.1px var(--primary-color);
+        transform: translate(.5rem, -.5rem);
+      }
+
+      &::after {
+        color: var(--tertiary-color);
+        z-index: 2;
+        -webkit-text-stroke: 0.1px var(--primary-color);
+        transform: translate(1rem, -1rem);
+      }
     }
 
     @include mq(m) { font-size: 6rem; }
@@ -53,13 +65,13 @@
   &__date, &__text {
     font-size: 2rem;
     font-family: var(--secondary-font);
+    margin-bottom: 2rem;
   }
 
-  // .legal__date + p
+  // .legal__date
   &__date {
     display: block;
-    margin-bottom: 2rem;
-
+    // .legal__date + p
     + p { margin-bottom: 4rem; }
   }
 

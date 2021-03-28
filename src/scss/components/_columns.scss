@@ -1,0 +1,37 @@
+/* ********** Columns Component ********** */
+.columns {
+  position: relative;
+  height: 35rem;
+
+  @include mq(l) { height: 40rem; }
+
+  // .columns__image
+  &__image {
+    position: absolute;
+
+    &:first-child { top: -30%; left: -70%; }
+    &:nth-child(2) { top: 50%; left: -5%; width: 20rem; }
+    &:nth-child(3) { top: -20%; left: 35%; width: 18rem; }
+    &:nth-child(4) { display: none; }
+    &:nth-child(5) { display: none; }
+    &:last-child { bottom: 0; right: 0; }
+
+    @include mq(m) {
+      &:first-child { top: -50%; left: -50%; width: 60rem; }
+      &:nth-child(2) { top: 60%; width: 25rem; }
+      &:nth-child(3) { top: -30%; left: 33%; width: 28rem; }
+      &:nth-child(4) { display: none; }
+      &:nth-child(5) { display: block; bottom: 30%; right: 3%; width: 40rem; }
+      &:last-child { bottom: 0; right: 15%; width: 45rem; }
+    }
+
+    @include mq(l) {
+      &:first-child { top: -90%; left: -30%; width: 70rem; }
+      &:nth-child(2) { top: 30%; width: 35rem; }
+      &:nth-child(3) { top: -60%; left: 25%; width: 35rem; }
+      &:nth-child(4) { display: block; top: -30%; right: 15%; width: 20rem; }
+      &:nth-child(5) { right: 0; width: 70rem; }
+      &:last-child { right: 30%; width: 80rem; }
+    }
+  }
+}

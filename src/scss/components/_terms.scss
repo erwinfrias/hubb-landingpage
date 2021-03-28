@@ -1,0 +1,89 @@
+/* ********** Terms Component ********** */
+.terms {
+  background-color: var(--primary-color);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 99%);
+  padding-bottom: 10rem;
+  // margin-bottom: 5rem;
+
+  @include mq(m) { clip-path: polygon(0 0, 100% 0, 100% 100%, 0 97%); padding-bottom: 20rem; }
+  @include mq(l) { clip-path: polygon(0 0, 100% 0, 100% 100%, 0 95%); padding-bottom: 25rem; margin-bottom: 10rem; }
+
+  // .terms__container
+  &__container {
+    padding-top: 10rem;
+    color: var(--secondary-color);
+
+    @include mq(l) { padding-top: 18vh; }
+  }
+
+  // .terms__title
+  &__title {
+    position: relative;
+    font-size: 5rem;
+    text-transform: uppercase;
+    margin-bottom: 3rem;
+    line-height: 6rem;
+    color: var(--text-color-white);
+    -webkit-text-stroke: 0.1px var(--primary-color);
+
+    &::before, &::after {
+      content: attr(data-terms);
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+    &::before {
+      color: var(--quaternary-color);
+      z-index: 1;
+      -webkit-text-stroke: 0.1px var(--primary-color);
+      transform: translate(.5rem, -.5rem);
+    }
+
+    &::after {
+      color: var(--tertiary-color);
+      z-index: 2;
+      -webkit-text-stroke: 0.1px var(--primary-color);
+      transform: translate(1rem, -1rem);
+    }
+
+    @include mq(m) { font-size: 6rem; }
+  }
+
+  // .terms__date, .terms__text
+  &__date, &__text {
+    font-size: 2rem;
+    font-family: var(--secondary-font);
+  }
+
+  // .terms__date + p
+  &__date {
+    display: block;
+    margin-bottom: 2rem;
+
+    + p { margin-bottom: 4rem; }
+  }
+
+  // .terms__section
+  &__section {
+    font-size: 4rem;
+    margin-bottom: 3rem;
+    line-height: 5rem;
+
+    &--odd { color: var(--tertiary-color); }
+    &--even { color: var(--quaternary-color); }
+  }
+
+  // .terms__description
+  &__description {
+    margin-bottom: 4rem;
+  }
+
+  // .terms__link
+  &__link {
+    color: var(--text-color-white);
+    font-weight: bolder;
+
+    &:hover { color: var(--tertiary-color); }
+  }
+}

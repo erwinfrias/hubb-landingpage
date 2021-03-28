@@ -1,14 +1,13 @@
-/* ********** Terms Component ********** */
-.terms {
+/* ********** Legal Component ********** */
+.legal {
   background-color: var(--primary-color);
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 99%);
   padding-bottom: 10rem;
-  // margin-bottom: 5rem;
 
   @include mq(m) { clip-path: polygon(0 0, 100% 0, 100% 100%, 0 97%); padding-bottom: 20rem; }
   @include mq(l) { clip-path: polygon(0 0, 100% 0, 100% 100%, 0 95%); padding-bottom: 25rem; margin-bottom: 10rem; }
 
-  // .terms__container
+  // .legal__container
   &__container {
     padding-top: 10rem;
     color: var(--secondary-color);
@@ -16,7 +15,7 @@
     @include mq(l) { padding-top: 18vh; }
   }
 
-  // .terms__title
+  // .legal__title
   &__title {
     position: relative;
     font-size: 5rem;
@@ -50,13 +49,13 @@
     @include mq(m) { font-size: 6rem; }
   }
 
-  // .terms__date, .terms__text
+  // .legal__date, .legal__text
   &__date, &__text {
     font-size: 2rem;
     font-family: var(--secondary-font);
   }
 
-  // .terms__date + p
+  // .legal__date + p
   &__date {
     display: block;
     margin-bottom: 2rem;
@@ -64,7 +63,7 @@
     + p { margin-bottom: 4rem; }
   }
 
-  // .terms__section
+  // .legal__section
   &__section {
     font-size: 4rem;
     margin-bottom: 3rem;
@@ -74,12 +73,12 @@
     &--even { color: var(--quaternary-color); }
   }
 
-  // .terms__description
+  // .legal__description
   &__description {
     margin-bottom: 4rem;
   }
 
-  // .terms__link
+  // .legal__link
   &__link {
     color: var(--text-color-white);
     font-weight: bolder;

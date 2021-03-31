@@ -50,6 +50,8 @@ import iconSend from './images/icon-send.svg'
 import pillarsGroup from './images/pillars.png'
 import pillarsMedium from './images/pillars-medium.png'
 
+import openGraphHubb from './images/hubb.jpg'
+
 /*  CSS
 \*-------------------------------------------------------*/
 import scss from './scss/main.scss'

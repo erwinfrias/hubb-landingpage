@@ -79,7 +79,8 @@
 .nav {
   position: fixed;
   width: 100%;
-  height: calc(100vh - 8rem);
+  height: 100%;
+  z-index: -1;
   top: -100%;
   left: 0;
   background: var(--primary-color) no-repeat;
@@ -91,7 +92,7 @@
   transition: left .3s;
 
   // nav.show
-  &.show { top: 8rem; }
+  &.show { top: 0; }
 
   @include mq(l) { background-position: bottom, -50% 40%, 50% 140%; }
 }
@@ -99,6 +100,7 @@
 
 /* ********** Menu ********** */
 .menu {
+  margin-top: 8rem;
   text-align: center;
   display: flex;
   flex-flow: column wrap;

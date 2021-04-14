@@ -1,0 +1,49 @@
+/* ********** Banner Component ********** */
+.banner {
+  padding-top: 8rem;
+  height: calc(30vh + 8rem);
+  background: url('/assets/images/careers.jpg') no-repeat;
+  background-position: top right;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @include mq(l) { height: 50vh; }
+
+  // .banner__title
+  &__title {
+    display: block;
+    width: 80%;
+    position: relative;
+    display: inline-block;
+    color: var(--secondary-color);
+    font-size: 4.5rem;
+    text-transform: uppercase;
+    -webkit-text-stroke: 0.1px var(--primary-color);
+
+    &::before, &::after {
+      content: attr(data-careers);
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+    &::before {
+      color: var(--quaternary-color);
+      z-index: 1;
+      -webkit-text-stroke: 0.1px var(--primary-color);
+      transform: translate(.5rem, -.5rem);
+    }
+
+    &::after {
+      color: var(--tertiary-color);
+      z-index: 2;
+      -webkit-text-stroke: 0.1px var(--primary-color);
+      transform: translate(1rem, -1rem);
+    }
+
+    @include mq(m) { font-size: 6rem; width: 50%; }
+    @include mq(l) { width: 35%; }
+  }
+}

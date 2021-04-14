@@ -52,6 +52,8 @@ import pillarsMedium from './images/pillars-medium.png'
 
 import openGraphHubb from './images/hubb.jpg'
 
+import bannerCareers from './images/careers.jpg'
+
 /*  CSS
 \*-------------------------------------------------------*/
 import scss from './scss/main.scss'

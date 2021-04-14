@@ -81,6 +81,10 @@ module.exports = {
       template: './src/pug/pages/privacy.pug',
       filename: 'privacy.html'
     }),
+    new HtmlWebpackPlugin({
+      template: './src/pug/pages/careers.pug',
+      filename: 'careers.html'
+    }),
     new MiniCssExtractPlugin({
       filename: './assets/css/main.css'
     }),

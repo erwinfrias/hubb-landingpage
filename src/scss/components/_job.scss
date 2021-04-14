@@ -1,0 +1,83 @@
+/* ********** Job Component ********** */
+.job {
+  background-color: var(--primary-color);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 99%);
+  padding-bottom: 15rem;
+
+  @include mq(m) { clip-path: polygon(0 0, 100% 0, 100% 100%, 0 97%); margin-bottom: 7rem; }
+  @include mq(l) { clip-path: polygon(0 0, 100% 0, 100% 100%, 0 95%); padding-bottom: 25rem; margin-bottom: 20rem; }
+
+  // .job__container
+  &__container {
+    color: var(--text-color-white);
+    font-family: var(--secondary-font);
+  }
+
+  // .job__title
+  &__title {
+    padding: 3rem 0;
+    font-size: 3rem;
+    font-weight: bolder;
+
+    &--red { color: var(--quaternary-color); }
+    &--yellow { color: var(--tertiary-color); }
+
+    @include mq(m) { font-size: 4rem; padding: 4rem 0; }
+  }
+
+  // .job__description
+  &__description {
+    font-size: 2rem;
+  }
+
+  // .job__item
+  &__item {
+    background-color: var(--secondary-color);
+    border-radius: .5rem;
+    padding: 1rem;
+    margin-bottom: 3rem;
+    color: var(--text-color-black);
+
+    &:last-child { margin-bottom: 0; }
+
+    @include mq(m) {
+      padding: 2rem;
+      display: grid;
+      grid-template-columns: 2.5fr repeat(2,1fr);
+      grid-template-areas: "position location type" "apply apply apply";
+      justify-content: center;
+      align-items: center;
+    }
+
+    @include mq(l) {
+      grid-template-columns: 2.5fr repeat(3,1fr);
+      grid-template-areas: "position location type apply";
+    }
+  }
+
+  // .job__position
+  &__position, &__location, &__type { font-size: 2.3rem; }
+
+  // .job__location
+  &__location::before {
+    content: url('/assets/images/icon-location.svg');
+    margin-right: 1rem;
+  }
+
+  // .job__link
+  &__link {
+    display: block;
+    padding: 1rem;
+    background-color: var(--tertiary-color);
+    color: var(--text-color-white);
+    border-radius: .5rem;
+    text-align: center;
+    font-size: 1.8rem;
+    margin-top: 2rem;
+
+    &:hover { background-color: var(--quaternary-color); }
+
+    @include mq(m) { grid-area: apply; }
+    @include mq(l) { margin-top: 0; width: 14rem; justify-self: end; }
+  }
+}

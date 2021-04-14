@@ -46,6 +46,7 @@ import iconInstagram from './images/icon-instagram.svg'
 import iconTwitter from './images/icon-twitter.svg'
 import iconLinkedIn from './images/icon-linkedin.svg'
 import iconSend from './images/icon-send.svg'
+import iconLocation from './images/icon-location.svg'
 
 import pillarsGroup from './images/pillars.png'
 import pillarsMedium from './images/pillars-medium.png'
@@ -53,6 +54,8 @@ import pillarsMedium from './images/pillars-medium.png'
 import openGraphHubb from './images/hubb.jpg'
 
 import bannerCareers from './images/careers.jpg'
+
+
 
 /*  CSS
 \*-------------------------------------------------------*/

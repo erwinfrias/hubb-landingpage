@@ -69,9 +69,11 @@ import 'animate.css'
 \*-------------------------------------------------------*/
 import { activeMenu, activeMenuLink } from './js/menu'
 import AOS from 'aos'
+import { emailNewsletter } from './js/email'
 
 activeMenu('hamburger','menu')
 activeMenuLink()
+emailNewsletter()
 
 AOS.init({
   offset: 100, // offset (in px) from the original trigger point

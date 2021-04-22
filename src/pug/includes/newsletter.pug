@@ -2,8 +2,8 @@ section.newsletter
   .newsletter__container
     .newsletter__item
       h3(class="newsletter__title", data-newsletter="Subscribe for updates") Subscribe for updates
-      form.newsletter__form
-        input(class="newsletter__email", type="email", name="Email", placeholder="Enter Your Email", required)
+      form(class="newsletter__form", id="newsletterForm")
+        input(class="newsletter__email", type="email", name="userEmail", placeholder="Enter Your Email", required)
         button(class="newsletter__button", type="submit")
     .newsletter__item
       img(class="newsletter__image", src="/assets/images/column.png", alt="Column Hubb App", data-aos="zoom-in", data-aos-duration="2000")

@@ -55,6 +55,10 @@ import openGraphHubb from './images/hubb.jpg'
 
 import bannerCareers from './images/careers.jpg'
 
+import cube from './images/cube.png'
+import stair from './images/stair.png'
+import door from './images/door.png'
+
 
 
 /*  CSS

@@ -1,0 +1,99 @@
+/* ********** Contact Component ********** */
+.contact {
+  position: relative;
+  background-color: var(--primary-color);
+
+
+  // .contact__container
+  &__container {
+    height: 100vh;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  // .contact__wrapper
+  &__wrapper {
+    text-align: center;
+
+    @include mq(m) { margin-bottom: 40vh; }
+  }
+
+  // .contact__title
+  &__title {
+    position: relative;
+    display: inline-block;
+    color: var(--secondary-color);
+    font-size: 4.5rem;
+    text-transform: uppercase;
+    -webkit-text-stroke: 0.1px var(--primary-color);
+    margin-bottom: 4rem;
+
+    &::before, &::after {
+      content: attr(data-contact);
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+    &::before {
+      color: var(--quaternary-color);
+      z-index: 1;
+      -webkit-text-stroke: 0.1px var(--primary-color);
+      transform: translate(.5rem, -.5rem);
+    }
+
+    &::after {
+      color: var(--tertiary-color);
+      z-index: 2;
+      -webkit-text-stroke: 0.1px var(--primary-color);
+      transform: translate(1rem, -1rem);
+    }
+
+    @include mq(m) { font-size: 6rem; }
+  }
+
+  // .contact__link
+  &__link {
+    display: block;
+    color: var(--text-color-white);
+    font-size: 3rem;
+    cursor: pointer;
+
+    &:hover { color: var(--tertiary-color); }
+
+    @include mq(m) { font-size: 4rem; }
+    @include mq(l) { font-size: 6rem; }
+  }
+
+  // .contact__image
+  &__image {
+    width: 65%;
+
+    @include mq(m) { position: absolute; }
+
+    // .contact__image--left
+    &--left {
+      display: none;
+
+      @include mq(m) { display: block; left: 0; width: 50%; }
+      @include mq(l) { width: 25%; top: 15%; }
+    }
+
+    // .contact__image--center
+    &--center {
+      margin-top: 10rem;
+
+      @include mq(m) { right: 10%; bottom: 5%; width: 30%; }
+      @include mq(l) { right: 20%; width: 18%; }
+    }
+
+    // .contact__image--right
+    &--right {
+      display: none;
+
+      @include mq(l) { display: block; right: 3%; width: 10%; }
+    }
+  }
+}

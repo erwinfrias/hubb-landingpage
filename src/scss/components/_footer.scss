@@ -1,12 +1,6 @@
 /* ********** Hero Component ********** */
 .footer {
   padding: 3rem 0;
-  background: var(--secondary-color) url('/assets/images/fissure-footer.png') no-repeat;
-  background-size: 80%;
-  background-position: right bottom;
-
-  @include mq(m) { background-size: 40%; }
-  @include mq(l) { background-size: 30%; }
 
   // .footer__container
   &__container {
@@ -69,8 +63,7 @@
   // .footer__title
   &__title {
     font-size: 3.5rem;
-    color: var(--tertiary-color);
-    -webkit-text-stroke: .5px var(--primary-color);
+    color: var(--text-color-black);
 
     @include mq(m) { font-size: 3rem; }
   }
@@ -87,7 +80,7 @@
     cursor: pointer;
 
     // .footer__link:hover
-    &:hover { color: var(--quaternary-color); font-weight: bold; }
+    &:hover { color: var(--tertiary-color); font-weight: bold; }
 
     @include mq(m) { font-size: 1.6rem; padding: 1rem 1rem 1rem 0; }
   }

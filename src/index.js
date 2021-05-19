@@ -7,6 +7,7 @@
 \*-------------------------------------------------------*/
 import favicon from './images/favicon.png'
 import logo from './images/hubb-logo.svg'
+import logoBlack from './images/hubb-logo-black.svg'
 import friendsHubb from './images/friends-hubb.svg'
 
 import bgMenu from './images/bg-menu.png'

@@ -22,8 +22,8 @@
     text-transform: uppercase;
     margin-bottom: 3rem;
     line-height: 6rem;
-    color: var(--text-color-white);
-    -webkit-text-stroke: 0.1px var(--primary-color);
+    color: transparent;
+    -webkit-text-stroke: 0.1px var(--secondary-color);
 
     // .legal__title--terms
     &--terms {
@@ -44,14 +44,14 @@
       }
 
       &::before {
-        color: var(--quaternary-color);
+        color: var(--tertiary-color);
         z-index: 1;
         -webkit-text-stroke: 0.1px var(--primary-color);
         transform: translate(.5rem, -.5rem);
       }
 
       &::after {
-        color: var(--tertiary-color);
+        color: var(--secondary-color);
         z-index: 2;
         -webkit-text-stroke: 0.1px var(--primary-color);
         transform: translate(1rem, -1rem);

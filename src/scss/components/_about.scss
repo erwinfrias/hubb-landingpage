@@ -17,10 +17,10 @@
   &__title {
     position: relative;
     display: inline-block;
-    color: var(--secondary-color);
+    color: transparent;
     font-size: 4.5rem;
     text-transform: uppercase;
-    -webkit-text-stroke: 0.1px var(--primary-color);
+    -webkit-text-stroke: 0.1px var(--secondary-color);
 
     &::before, &::after {
       content: attr(data-about);
@@ -30,14 +30,14 @@
     }
 
     &::before {
-      color: var(--quaternary-color);
+      color: var(--tertiary-color);
       z-index: 1;
       -webkit-text-stroke: 0.1px var(--primary-color);
       transform: translate(.5rem, -.5rem);
     }
 
     &::after {
-      color: var(--tertiary-color);
+      color: var(--secondary-color);
       z-index: 2;
       -webkit-text-stroke: 0.1px var(--primary-color);
       transform: translate(1rem, -1rem);

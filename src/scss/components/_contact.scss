@@ -24,10 +24,10 @@
   &__title {
     position: relative;
     display: inline-block;
-    color: var(--secondary-color);
+    color: transparent;
     font-size: 4.5rem;
     text-transform: uppercase;
-    -webkit-text-stroke: 0.1px var(--primary-color);
+    -webkit-text-stroke: 0.1px var(--secondary-color);
     margin-bottom: 4rem;
 
     &::before, &::after {
@@ -38,14 +38,14 @@
     }
 
     &::before {
-      color: var(--quaternary-color);
+      color: var(--tertiary-color);
       z-index: 1;
       -webkit-text-stroke: 0.1px var(--primary-color);
       transform: translate(.5rem, -.5rem);
     }
 
     &::after {
-      color: var(--tertiary-color);
+      color: var(--secondary-color);
       z-index: 2;
       -webkit-text-stroke: 0.1px var(--primary-color);
       transform: translate(1rem, -1rem);
@@ -59,6 +59,7 @@
     display: block;
     color: var(--text-color-white);
     font-size: 3rem;
+    font-family: var(--secondary-font);
     cursor: pointer;
 
     &:hover { color: var(--tertiary-color); }

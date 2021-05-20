@@ -1,0 +1,57 @@
+/* ********** Countdown Component ********** */
+.countdown {
+  background-color: var(--primary-color);
+  padding: 6rem 0;
+
+  // .countdown__container
+  &__container {
+    color: var(--text-color-white);
+    text-align: center;
+
+    @include mq(m) { width: 50%; }
+  }
+
+  // .countdown__title
+  &__title {
+    font-family: var(--tertiary-font);
+    font-size: 2.5rem;
+
+    @include mq(l) { font-size: 3.5rem; }
+  }
+
+  // .countdown__timer
+  &__wrapper {
+    margin: 5rem auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    @include mq(m) { width: 50%; }
+    @include mq(l) { width: 20%; }
+  }
+
+  // .countdown__time
+  &__time {
+    position: relative;
+    font-family: var(--tertiary-font);
+    font-size: 3rem;
+
+    span {
+      position: absolute;
+      left: 10%;
+      bottom: -50%;
+      font-size: 1.3rem;
+      text-transform: uppercase;
+      color: var(--tertiary-color);
+    }
+
+    @include mq(m) { font-size: 3.5rem; }
+  }
+
+  // .countdown__message
+  &__message {
+    font-family: var(--secondary-font);
+    font-weight: bolder;
+    font-size: 3rem;
+  }
+}

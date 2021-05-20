@@ -89,6 +89,10 @@ module.exports = {
       template: './src/pug/pages/contact.pug',
       filename: 'contact.html'
     }),
+    new HtmlWebpackPlugin({
+      template: './src/pug/pages/landing.pug',
+      filename: 'landing.html'
+    }),
     new MiniCssExtractPlugin({
       filename: './assets/css/main.css'
     }),

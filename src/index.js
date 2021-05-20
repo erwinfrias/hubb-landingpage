@@ -8,6 +8,7 @@
 import favicon from './images/favicon.png'
 import logo from './images/hubb-logo.svg'
 import logoBlack from './images/hubb-logo-black.svg'
+import logo3D from './images/logo.gif'
 import friendsHubb from './images/friends-hubb.svg'
 
 import bgMenu from './images/bg-menu.png'
@@ -59,6 +60,9 @@ import bannerCareers from './images/careers.jpg'
 import cube from './images/cube.png'
 import stair from './images/stair.png'
 import door from './images/door.png'
+
+import people from './images/people.jpg'
+import partyGlass from './images/party-cup.gif'
 
 
 

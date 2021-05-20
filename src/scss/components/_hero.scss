@@ -1,66 +1,44 @@
 /* ********** Hero Component ********** */
 .hero {
-  background: var(--primary-color) url('/assets/images/fissure.png') no-repeat;
-  background-size: 90%;
-  background-position: -80% bottom;
+  background: var(--primary-color) url('/assets/images/people.jpg') no-repeat center/cover;
+  background-position-y: 8rem ;
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
 
-  @include mq(m) {
-    background-size: 70%;
-    background-position: -80% bottom;
-  }
-
-  @include mq(l) {
-    background-size: 60%;
-    background-position: -70% bottom;
-  }
-
   // .hero__container
   &__container {
-    position: relative;
+    text-align: center;
     color: var(--secondary-color);
-
-    @include mq(m) {
-      display: grid;
-      grid-template-columns: repeat(2,1fr);
-      justify-content: center;
-      align-items: center;
-    }
   }
 
-  // .hero__item
-  &__item {
-    // .hero__item:last-child
-    &:last-child {
-      display: none;
+  // .hero__image
+  &__image {
+    width: 100%;
 
-      @include mq(m) { display: block; position: relative; justify-self: center; }
-      @include mq(l) { margin-top: 8.3rem; }
+    // .hero__image--logo
+    &--logo {
+      @include mq(m) { width: 50%; }
+      @include mq(l) { width: 30%; }
+    }
+
+    // .hero__image--glass
+    &--glass {
+      @include mq(m) { width: 70%; }
+      @include mq(l) { width: 40%; }
     }
   }
 
   // .hero__title
   &__title {
-    font-size: 4rem;
-    line-height: 5rem;
-    text-transform: uppercase;
-
-    // .hero__title > span
-    > span { color: var(--tertiary-color); }
-
-    @include mq(m) { font-size: 5.5rem; line-height: 6rem; }
-  }
-
-  // .hero__text
-  &__text {
-    font-size: 2.1rem;
     font-family: var(--secondary-font);
-    margin-top: 3rem;
+    font-weight: lighter;
+    font-size: 2.2rem;
+    margin: 3rem 0;
 
-    @include mq(m) { margin-top: 4rem; }
+    @include mq(m) { font-size: 3rem; margin: 5rem auto; }
+    @include mq(l) { width: 70%; }
   }
 
   // .hero__download
@@ -70,39 +48,16 @@
     justify-content: space-around;
     align-items: center;
 
-    @include mq(m) {
-      margin-top: 9rem;
-      justify-content: flex-start;
-
-      .hero__link:last-child { margin-left: 3rem; }
-    }
+    @include mq(m) { width: 60%; margin: auto; }
+    @include mq(l) { width: 40%; }
   }
 
   // .hero__store
   &__store {
-    width: 15rem;
+    width: 18rem;
     height: auto;
+    cursor: pointer;
 
-    @include mq(l) { width: 18rem; }
-  }
-
-  // .hero__emoji
-  &__emoji {
-    position: absolute;
-    width: 15rem;
-    height: auto;
-
-    // .hero__emoji--top
-    &--top { top: 0; left: 0; @include mq(l) { left: -15%; } }
-
-    // .hero__emoji--bottom
-    &--bottom { bottom: 0; right: 0; @include mq(l) { right: -10%; } }
-  }
-
-  // .hero__app
-  &__app {
-    height: auto;
-
-    @include mq(l) { height: 60rem; }
+    @include mq(m) { width: 20rem; }
   }
 }

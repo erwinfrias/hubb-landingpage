@@ -1,7 +1,7 @@
 <?php
   header("Content-Type:text/html; charset=UTF-8");
   $para = 'contact@hubb-me.com';
-  $titulo = '🧲 New Newsletter Lead';
+  $titulo = '🧲 New Registered User';
 
   $cabeceras = 'MIME-Version: 1.0' . "\r\n";
   $cabeceras .= 'Content-type: text/html; charset=utf-8' . "\r\n";
@@ -11,7 +11,7 @@
   $mensaje =
       '<html>'.
           '<head>
-              <title>Hubb Landing Page Newsletter</title>
+              <title>Hubb Landing Page Registered User</title>
           </head>'.
           '<body>
             <p>👋 Hi!</p>

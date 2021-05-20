@@ -78,12 +78,13 @@ import 'animate.css'
 \*-------------------------------------------------------*/
 import { activeMenu, activeMenuLink } from './js/menu'
 import AOS from 'aos'
-import { emailNewsletter } from './js/email'
+import { emailNewsletter, emailRegister } from './js/email'
 import { countdown } from './js/countdown'
 
 activeMenu('hamburger','menu')
 activeMenuLink()
 emailNewsletter()
+emailRegister()
 countdown('countdown', 'Jun 04, 2021 23:59:00', "Live College to The Fullest 🍺🎉")
 
 AOS.init({

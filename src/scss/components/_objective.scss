@@ -1,0 +1,37 @@
+/* ********** Objective Component ********** */
+.objective {
+  padding-bottom: 13rem;
+  background-color: var(--primary-color);
+
+  // .objective__container
+  &__container {
+    text-align: center;
+    color: var(--text-color-white);
+
+    @include mq(m) { width: 60%;}
+  }
+
+  // .objective__image
+  &__image {
+    width: 80%;
+    margin: 5rem 0;
+    border-radius: 5rem;
+    box-shadow: 0px 0px 10px 0px var(--secondary-color);
+
+    @include mq(l) { width: 40%; }
+  }
+
+  // .objective__text
+  &__text {
+    font-family: var(--secondary-font);
+    font-size: 2rem;
+    margin-top: 6rem;
+  }
+
+  // .objective__logo
+  &__logo {
+    width: 12rem;
+    vertical-align: middle;
+    margin: 0 1rem;
+  }
+}

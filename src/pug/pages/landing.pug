@@ -1,6 +1,6 @@
 extends ../template.pug
 append variables
-  - pageTitle       = 'Landing Page'
+  - pageTitle       = 'Live College to The Fullest'
   - metaDescription = 'Search less, Hang out more! Groups, Chats, Events - Tap to see details.'
   - ogUrl           = 'https://hubb-me.com/landing.html'
   - ogImage         = 'https://hubb-me.com/assets/images/hubb.jpg'
@@ -16,3 +16,9 @@ block body
 
   //- Register Secction
   include ../includes/register.pug
+
+  //- Objective Section
+  .objective
+    .objective__container.l-container
+      img(class="objective__image", src="/assets/images/hubb-app.gif", alt="Hubb App Userflow")
+      p.objective__text We built #[img(class="objective__logo", src="/assets/images/friends-hubb.svg", alt="Friends Hubb App")] to keep you connected with everyone you love. One of our goals from the beginning has been to provide a place to discover things to do and allow you to do those things with your favorite people.

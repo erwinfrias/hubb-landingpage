@@ -63,6 +63,7 @@ import door from './images/door.png'
 
 import people from './images/people.jpg'
 import partyGlass from './images/party-cup.gif'
+import appFlow from './images/hubb-app.gif'
 
 
 

@@ -1,0 +1,60 @@
+/* ********** Blog Component ********** */
+.blog {
+  background-color: var(--primary-color);
+  padding-bottom: 10rem;
+
+  @include mq(m) {
+    background: var(--primary-color) url('/assets/images/door.png') no-repeat;
+    background-position: 100% 30%;
+  }
+
+  &__container {
+    padding-top: 10rem;
+    color: var(--secondary-color);
+
+    @include mq(l) { padding-top: 18vh; }
+  }
+
+  &__title {
+    position: relative;
+    display: inline-block;
+    color: transparent;
+    font-size: 4.5rem;
+    text-transform: uppercase;
+    -webkit-text-stroke: 0.1px var(--secondary-color);
+
+    &::before, &::after {
+      content: attr(data-blog);
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+    &::before {
+      color: var(--tertiary-color);
+      z-index: 1;
+      -webkit-text-stroke: 0.1px var(--primary-color);
+      transform: translate(.5rem, -.5rem);
+    }
+
+    &::after {
+      color: var(--secondary-color);
+      z-index: 2;
+      -webkit-text-stroke: 0.1px var(--primary-color);
+      transform: translate(1rem, -1rem);
+    }
+
+    @include mq(m) { font-size: 6rem; }
+  }
+  // .blog__wrapper
+  &__wrapper {
+    margin-top: 4rem;
+  }
+
+  // .blog__text
+  &__text {
+    font-size: 2rem;
+    font-family: var(--secondary-font);
+    margin: 2rem 0;
+  }
+}

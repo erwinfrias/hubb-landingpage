@@ -74,6 +74,10 @@ module.exports = {
       filename: 'about.html'
     }),
     new HtmlWebpackPlugin({
+      template: './src/pug/pages/blog.pug',
+      filename: 'blog.html'
+    }),
+    new HtmlWebpackPlugin({
       template: './src/pug/pages/terms-of-service.pug',
       filename: 'terms-of-service.html'
     }),

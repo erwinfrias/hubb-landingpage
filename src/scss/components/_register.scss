@@ -16,6 +16,8 @@
     font-family: var(--secondary-font);
     font-weight: lighter;
     font-size: 2rem;
+
+    strong { color: var(--tertiary-color); }
   }
 
   // .register__form
@@ -38,6 +40,7 @@
     padding-left: 2rem;
     font-family: var(--secondary-font);
     font-size: 1.6rem;
+    color: var(--text-color-white);
 
     &::placeholder { font-family: var(--secondary-font); }
 
@@ -46,7 +49,7 @@
 
   // .register__button
   &__button {
-    background-color: var(--quaternary-color);
+    background: var(--quaternary-color) url('/assets/images/icon-arrow.svg') no-repeat center;
     width: 4rem;
     height: 4rem;
     border: none;

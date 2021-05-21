@@ -1,0 +1,6 @@
+/* ********** State Mobile Display ********** */
+.is-hidden {
+  display: none;
+
+  @include mq(m) { display: block; }
+}

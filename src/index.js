@@ -66,6 +66,11 @@ import partyGlass from './images/party-cup.gif'
 import appFlow from './images/hubb-app.gif'
 import iconArrow from './images/icon-arrow.svg'
 
+import iconGoingOut from './images/icon-out.svg'
+import iconDate from './images/icon-date.svg'
+import iconDrinks from './images/icon-drinks.svg'
+import iconFood from './images/icon-food.svg'
+
 
 /*  CSS
 \*-------------------------------------------------------*/

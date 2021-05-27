@@ -71,6 +71,11 @@ import iconDate from './images/icon-date.svg'
 import iconDrinks from './images/icon-drinks.svg'
 import iconFood from './images/icon-food.svg'
 
+import screenPlans from './images/hubb-plans.png'
+import screenFollowing from './images/hubb-following.png'
+import screenDiscover from './images/hubb-discover.png'
+
+
 
 /*  CSS
 \*-------------------------------------------------------*/
@@ -86,12 +91,14 @@ import { activeMenu, activeMenuLink } from './js/menu'
 import AOS from 'aos'
 import { emailNewsletter, emailRegister } from './js/email'
 import { countdown } from './js/countdown'
+import { slider } from './js/slider'
 
 activeMenu('hamburger','menu')
 activeMenuLink()
 emailNewsletter()
 emailRegister()
 countdown('countdown', 'Jun 04, 2021 23:59:00', "Live College to The Fullest 🍺🎉")
+slider('slider')
 
 AOS.init({
   offset: 100, // offset (in px) from the original trigger point

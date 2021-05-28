@@ -1,55 +1,56 @@
 /* ********** Register Component ********** */
 .register {
   background-color: var(--primary-color);
-  padding-bottom: 5rem;
+  padding: 1rem 0 5rem;
 
   // .register__container
   &__container {
     text-align: center;
     color: var(--text-color-white);
 
-    @include mq(m) { width: 40%; margin: 0 auto; }
+    @include mq(m) { width: 50%; margin: 0 auto; }
   }
 
   // .register__title
   &__title {
     font-family: var(--secondary-font);
     font-weight: lighter;
-    font-size: 2rem;
+    font-size: 1.5rem;
 
     strong { color: var(--tertiary-color); }
   }
 
   // .register__form
   &__form {
-    margin-top: 3rem;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
+    border: 1px solid var(--secondary-color);
+    border-radius: .5rem;
+    width: 80%;
+    margin: 3rem auto 0;
 
-    @include mq(l) { width: 70%; margin: 3rem auto 0; }
+    @include mq(l) { width: 50%; }
   }
 
   // .register__email
   &__email {
-    border: 1px solid var(--secondary-color);
+    border: none;
     background-color: var(--primary-color);
     width: 25rem;
     height: 4rem;
     outline: 0;
-    padding-left: 2rem;
     font-family: var(--secondary-font);
     font-size: 1.6rem;
     color: var(--text-color-white);
+    margin-left: 2rem;
 
     &::placeholder { font-family: var(--secondary-font); }
-
-    @include mq(l) { width: 30rem; }
   }
 
   // .register__button
   &__button {
-    background: var(--quaternary-color) url('/assets/images/icon-arrow.svg') no-repeat center;
+    background-color: var(--quaternary-color);
     width: 4rem;
     height: 4rem;
     border: none;

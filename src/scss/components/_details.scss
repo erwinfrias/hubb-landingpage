@@ -39,11 +39,8 @@
   // .details__app
   &__app {
     width: 80%;
-    border-radius: 5rem;
-    box-shadow: 0px 0px 10px 0px var(--secondary-color);
 
     @include mq(m) { width: 40%; }
-    @include mq(l) { width: 30%; }
   }
 
   // .details__title

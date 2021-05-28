@@ -7,8 +7,6 @@
   &__container {
     color: var(--text-color-white);
     text-align: center;
-
-    @include mq(m) { width: 50%; }
   }
 
   // .countdown__title
@@ -16,12 +14,13 @@
     font-family: var(--tertiary-font);
     font-size: 2.5rem;
 
-    @include mq(l) { font-size: 3.5rem; }
+    @include mq(m) { width: 80%; margin: 0 auto; font-size: 3rem; }
+    @include mq(l) { width: 60%; font-size: 3.5rem; }
   }
 
   // .countdown__timer
   &__wrapper {
-    margin: 5rem auto;
+    margin: 5rem auto 0;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -45,7 +44,8 @@
       color: var(--tertiary-color);
     }
 
-    @include mq(m) { font-size: 3.5rem; }
+    @include mq(m) { font-size: 4rem; }
+    @include mq(l) { font-size: 4.5rem; }
   }
 
   // .countdown__message

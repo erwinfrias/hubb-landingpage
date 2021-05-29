@@ -74,7 +74,7 @@ import iconFood from './images/icon-food.svg'
 import screenPlans from './images/hubb-plans.png'
 import screenFollowing from './images/hubb-following.png'
 import screenDiscover from './images/hubb-discover.png'
-
+import screenApp from './images/hubb-app.png'
 
 
 /*  CSS

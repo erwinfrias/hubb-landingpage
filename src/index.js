@@ -76,6 +76,9 @@ import screenFollowing from './images/hubb-following.png'
 import screenDiscover from './images/hubb-discover.png'
 import screenApp from './images/hubb-app.png'
 
+import iconHeartBorder from './images/icon-heart-border.svg'
+import iconHeartFull from './images/icon-heart-full.svg'
+
 
 /*  CSS
 \*-------------------------------------------------------*/
@@ -92,6 +95,7 @@ import AOS from 'aos'
 import { emailNewsletter, emailRegister } from './js/email'
 import { countdown } from './js/countdown'
 import { slider } from './js/slider'
+import { likeHubb } from './js/like'
 
 activeMenu('hamburger','menu')
 activeMenuLink()
@@ -99,6 +103,7 @@ emailNewsletter()
 emailRegister()
 countdown('countdown', 'Jun 04, 2021 23:59:00', "Live College to The Fullest 🍺🎉")
 slider('slider')
+likeHubb('.details__reaction')
 
 AOS.init({
   offset: 100, // offset (in px) from the original trigger point

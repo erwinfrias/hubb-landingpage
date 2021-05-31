@@ -12,6 +12,15 @@
 
   // .details__item
   &__item {
+    // .details__item:first-child
+    &:first-child {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: flex-start;
+
+      @include mq(m) { justify-content: center; }
+    }
+
     // .details__item:nth-child(2)
     &:nth-child(2) {
       margin: 8rem auto;
@@ -41,6 +50,29 @@
     width: 80%;
 
     @include mq(m) { width: 40%; }
+  }
+
+  // .details__like
+  &__like {
+    background: url('/assets/images/icon-heart-border.svg') no-repeat;
+    background-size: cover;
+    height: 5rem;
+    width: 5rem;
+    margin-top: 3rem;
+    cursor: pointer;
+    transition: 0.2s;
+
+    &:hover {
+      background: url('/assets/images/icon-heart-full.svg') no-repeat;
+      background-size: cover;
+    }
+  }
+
+  // .details__counter
+  &__counter {
+    font-size: 2rem;
+    font-weight: bolder;
+    color: var(--tertiary-color);
   }
 
   // .details__title

@@ -1,0 +1,77 @@
+/* ********** Thanks Component ********** */
+.thanks {
+  position: relative;
+  background-color: var(--primary-color);
+  color: var(--text-color-white);
+
+  &__container {
+    height: 100vh;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    @include mq(m) {
+      background: var(--primary-color) no-repeat;
+      background-image: url('/assets/images/stair-floating.png'), url('/assets/images/pillars-medium.png');
+      background-size: 20%, 20%;
+      background-position: 0 90%, 100% 90%;
+    }
+
+    @include mq(l) {
+      background-size: 15%, 10%;
+      background-position: 0 80%, 100% 90%;
+    }
+  }
+
+  // .thanks__title
+  &__title {
+    position: relative;
+    display: inline-block;
+    color: transparent;
+    font-size: 6rem;
+    text-transform: uppercase;
+    -webkit-text-stroke: 0.1px var(--secondary-color);
+
+    &::before, &::after {
+      content: attr(data-thanks);
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+    &::before {
+      color: var(--tertiary-color);
+      z-index: 1;
+      -webkit-text-stroke: 0.1px var(--primary-color);
+      transform: translate(.5rem, -.5rem);
+
+      @include mq(m) { transform: translate(1rem, -1rem); }
+    }
+
+    &::after {
+      color: var(--secondary-color);
+      z-index: 2;
+      -webkit-text-stroke: 0.1px var(--primary-color);
+      transform: translate(1rem, -1rem);
+      @include mq(m) { transform: translate(2rem, -2rem); }
+    }
+
+    @include mq(m) { font-size: 12rem; }
+  }
+
+  // .thanks__text
+  &__text {
+    font-family: var(--secondary-font);
+    font-size: 2.2rem;
+    margin-bottom: 5rem;
+
+    @include mq(m) { font-size: 2.5rem; margin-bottom: 10rem; }
+  }
+
+  // .thanks__stores
+  &__stores {
+    display: flex;
+  }
+}

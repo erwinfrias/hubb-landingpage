@@ -39,6 +39,7 @@ import stairsLeft from './images/stair-left.png'
 import stairsRight from './images/stair-right.png'
 import stairsColumns from './images/columns.png'
 import stairsHole from './images/hole.png'
+import stairsFloat from './images/stair-floating.png'
 
 import aboutPillar from './images/pillar.png'
 import aboutStairs from './images/bottom-stairs.png'

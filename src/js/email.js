@@ -17,7 +17,8 @@ export const emailNewsletter = () => {
           return response.text()
       }).then(function (text) {
           console.log(text)
-          location.reload()
+          $NEWSLETTER_FORM.reset()
+          window.location = 'https://hubb-me.com/thanks.html'
       }).catch(function (error) {
           console.error(error)
       });
@@ -45,7 +46,8 @@ export const emailRegister = () => {
           return response.text()
       }).then(function (text) {
           console.log(text)
-          location.reload()
+          $REGISTER_FORM.reset()
+          window.location = 'https://hubb-me.com/thanks.html'
       }).catch(function (error) {
           console.error(error)
       });

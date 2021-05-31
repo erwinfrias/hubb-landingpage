@@ -97,6 +97,10 @@ module.exports = {
       template: './src/pug/pages/landing.pug',
       filename: 'landing.html'
     }),
+    new HtmlWebpackPlugin({
+      template: './src/pug/pages/thanks.pug',
+      filename: 'thanks.html'
+    }),
     new MiniCssExtractPlugin({
       filename: './assets/css/main.css'
     }),

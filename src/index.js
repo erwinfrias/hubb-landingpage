@@ -103,7 +103,7 @@ emailNewsletter()
 emailRegister()
 countdown('countdown', 'Jun 04, 2021 23:59:00', "Live College to The Fullest 🍺🎉")
 slider('slider')
-likeHubb('.details__reaction')
+likeHubb('.details__like')
 
 AOS.init({
   offset: 100, // offset (in px) from the original trigger point

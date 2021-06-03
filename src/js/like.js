@@ -1,11 +1,13 @@
 export const likeHubb = (selector) => {
+
   const $LIKE = document.querySelector(selector)
-  const $CLICK = document.querySelector('.details__counter')
+  const $COUNTER = document.querySelector('.details__counter')
   let counter = 545
 
   if($LIKE) {
     $LIKE.addEventListener('click', () => {
-      $CLICK.innerHTML = counter + 1
+      $COUNTER.innerHTML = counter + 1
+      $LIKE.classList.toggle('details__like--clicked')
     })
   }
 

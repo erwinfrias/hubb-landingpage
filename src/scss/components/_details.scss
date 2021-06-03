@@ -66,6 +66,14 @@
       background: url('/assets/images/icon-heart-full.svg') no-repeat;
       background-size: cover;
     }
+
+    &--clicked {
+      background: url('/assets/images/icon-heart-full.svg') no-repeat;
+      background-size: cover;
+      height: 5rem;
+      width: 5rem;
+      margin-top: 3rem;
+    }
   }
 
   // .details__counter

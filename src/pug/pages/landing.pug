@@ -9,7 +9,7 @@ block body
   //- Hero Section
   .hero
     .hero__container.l-container
-      img(class="hero__image hero__image--glass", src="/assets/images/party-cup.gif", alt="Hubb Party Cup")
+      img(class="hero__image hero__image--glass", loading="lazy", src="/assets/images/party-cup.gif", alt="Hubb Party Cup")
 
   //- Countdown Secction
   include ../includes/countdown.pug
@@ -21,4 +21,4 @@ block body
   .objective
     .objective__container.l-container
       img(class="objective__image", src="/assets/images/hubb-app.gif", alt="Hubb App Userflow")
-      p.objective__text We built #[img(class="objective__logo", src="/assets/images/friends-hubb.svg", alt="Friends Hubb App")] to keep you connected with everyone you love. One of our goals from the beginning has been to provide a place to discover things to do and allow you to do those things with your favorite people.
+      p.objective__text We built #[img(class="objective__logo", loading="lazy", src="/assets/images/friends-hubb.svg", alt="Friends Hubb App")] to keep you connected with everyone you love. One of our goals from the beginning has been to provide a place to discover things to do and allow you to do those things with your favorite people.

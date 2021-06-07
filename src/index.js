@@ -84,7 +84,6 @@ import iconHeartFull from './images/icon-heart-full.svg'
 /*  CSS
 \*-------------------------------------------------------*/
 import scss from './scss/main.scss'
-import 'aos/dist/aos.css'
 import 'animate.css'
 
 
@@ -92,7 +91,6 @@ import 'animate.css'
 /*  JavaScript
 \*-------------------------------------------------------*/
 import { activeMenu, activeMenuLink } from './js/menu'
-import AOS from 'aos'
 import { emailNewsletter, emailRegister } from './js/email'
 import { countdown } from './js/countdown'
 import { slider } from './js/slider'
@@ -105,10 +103,3 @@ emailRegister()
 countdown('countdown', 'Jun 04, 2021 23:59:00', "Live College to The Fullest 🍺🎉")
 slider('slider')
 likeHubb('.details__like')
-
-AOS.init({
-  offset: 100, // offset (in px) from the original trigger point
-  duration: 1000, // values from 0 to 3000, with step 50ms
-  easing: 'ease-out-back', // default easing for AOS animations
-  anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
-});

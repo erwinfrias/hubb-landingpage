@@ -67,39 +67,66 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: './src/pug/pages/index.pug'
+      template: './src/pug/pages/index.pug',
+      minify: {
+        removeScriptTypeAttributes: true
+      }
     }),
     new HtmlWebpackPlugin({
       template: './src/pug/pages/about.pug',
-      filename: 'about.html'
+      filename: 'about.html',
+      minify: {
+        removeScriptTypeAttributes: true
+      }
     }),
     new HtmlWebpackPlugin({
       template: './src/pug/pages/blog.pug',
-      filename: 'blog.html'
+      filename: 'blog.html',
+      minify: {
+        removeScriptTypeAttributes: true
+      }
     }),
     new HtmlWebpackPlugin({
       template: './src/pug/pages/terms-of-service.pug',
-      filename: 'terms-of-service.html'
+      filename: 'terms-of-service.html',
+      minify: {
+        removeScriptTypeAttributes: true
+      }
     }),
     new HtmlWebpackPlugin({
       template: './src/pug/pages/privacy.pug',
-      filename: 'privacy.html'
+      filename: 'privacy.html',
+      minify: {
+        removeScriptTypeAttributes: true
+      }
     }),
     new HtmlWebpackPlugin({
       template: './src/pug/pages/careers.pug',
-      filename: 'careers.html'
+      filename: 'careers.html',
+      minify: {
+        removeScriptTypeAttributes: true
+      }
     }),
     new HtmlWebpackPlugin({
       template: './src/pug/pages/contact.pug',
-      filename: 'contact.html'
+      filename: 'contact.html',
+      minify: {
+        removeScriptTypeAttributes: true
+      }
     }),
     new HtmlWebpackPlugin({
       template: './src/pug/pages/landing.pug',
-      filename: 'landing.html'
+      filename: 'landing.html',
+      minify: {
+        removeScriptTypeAttributes: true
+      }
     }),
     new HtmlWebpackPlugin({
       template: './src/pug/pages/thanks.pug',
-      filename: 'thanks.html'
+      filename: 'thanks.html',
+      minify: {
+        removeScriptTypeAttributes: true
+      }
     }),
     new MiniCssExtractPlugin({
       filename: './assets/css/main.css'

@@ -30,13 +30,14 @@
     width: 80%;
     margin: 3rem auto 0;
 
-    @include mq(l) { width: 50%; }
+    @include mq(m) { width: 50%; }
+    @include mq(l) { width: 30%; }
   }
 
   // .register__email
   &__email {
     border: none;
-    background-color: var(--primary-color);
+    background-color: transparent;
     width: 25rem;
     height: 4rem;
     outline: 0;
@@ -50,12 +51,12 @@
 
   // .register__button
   &__button {
-    background-color: var(--quaternary-color);
+    background-color: var(--tertiary-color);
     width: 4rem;
     height: 4rem;
     border: none;
     cursor: pointer;
 
-    &:hover { background-color: var(--tertiary-color); }
+    &:hover { background-color: var(--quaternary-color); }
   }
 }

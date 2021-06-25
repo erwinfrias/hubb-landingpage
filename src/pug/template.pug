@@ -49,7 +49,8 @@ html(lang="en")
     noscript: iframe(title='Google Tag Manager', src='https://www.googletagmanager.com/ns.html?id=GTM-KF3CZXH', height='0', width='0', style='display:none;visibility:hidden')
 
     //- Menu Section
-    include includes/menu.pug
+    if pageTitle !== 'Live College to The Fullest'
+      include includes/menu.pug
 
     //- Body Section
     block body

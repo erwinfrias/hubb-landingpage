@@ -7,18 +7,26 @@ append variables
 
 block body
   //- Hero Section
-  .hero
+  .hero.hero--landing
     .hero__container.l-container
-      img(class="hero__image hero__image--glass", loading="lazy", src="/assets/images/party-cup.gif", alt="Hubb Party Cup")
+      a.logo__link(href="/"): img(class="hero__image animate__animated animate__rubberBand", loading="lazy", src="/assets/images/hubb-logo.svg", alt="Hubb logo")
+      h1(class="hero__title hero__title--landing") Search less, Hang out more!
+      .hero__download
+        a(class="hero__link", href="https://facebook.com/hubbpage?appstore", target="_blank", rel="follow noopener noreferrer"): img(class="hero__store", loading="lazy", src="/assets/images/app-store.svg", alt="Download Hubb App on the App Store")
+        a(class="hero__link", href="https://facebook.com/hubbpage?playstore", target="_blank", rel="follow noopener noreferrer"): img(class="hero__store", loading="lazy", src="/assets/images/google-play.svg", alt="Download Hubb App on Google Play")
+      p.hero__description Sign up to get an #[strong Early Access] before the release!
+      form(class="register__form", id="registerForm")
+        input(class="register__email", type="email", name="userEmail", placeholder="Enter Your Email", required)
+        button(class="register__button", type="submit"): img(src="/assets/images/icon-arrow.svg", alt="Submit")
 
-  //- Countdown Secction
-  include ../includes/countdown.pug
+  //- //- Countdown Secction
+  //- include ../includes/countdown.pug
 
-  //- Register Secction
-  include ../includes/register.pug
+  //- //- Register Secction
+  //- include ../includes/register.pug
 
-  //- Objective Section
-  .objective
-    .objective__container.l-container
-      img(class="objective__image", src="/assets/images/hubb-app.gif", alt="Hubb App Userflow")
-      p.objective__text We built #[img(class="objective__logo", loading="lazy", src="/assets/images/friends-hubb.svg", alt="Friends Hubb App")] to keep you connected with everyone you love. One of our goals from the beginning has been to provide a place to discover things to do and allow you to do those things with your favorite people.
+  //- //- Objective Section
+  //- .objective
+  //-   .objective__container.l-container
+  //-     img(class="objective__image", src="/assets/images/hubb-app.gif", alt="Hubb App Userflow")
+  //-     p.objective__text We built #[img(class="objective__logo", loading="lazy", src="/assets/images/friends-hubb.svg", alt="Friends Hubb App")] to keep you connected with everyone you love. One of our goals from the beginning has been to provide a place to discover things to do and allow you to do those things with your favorite people.

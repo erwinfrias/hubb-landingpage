@@ -19,14 +19,11 @@ block body
         input(class="register__email", type="email", name="userEmail", placeholder="Enter Your Email", required)
         button(class="register__button", type="submit"): img(src="/assets/images/icon-arrow.svg", alt="Submit")
 
-  //- //- Countdown Secction
-  //- include ../includes/countdown.pug
+  //- Experience Secction
+  include ../includes/experience.pug
 
-  //- //- Register Secction
-  //- include ../includes/register.pug
-
-  //- //- Objective Section
-  //- .objective
-  //-   .objective__container.l-container
-  //-     img(class="objective__image", src="/assets/images/hubb-app.gif", alt="Hubb App Userflow")
-  //-     p.objective__text We built #[img(class="objective__logo", loading="lazy", src="/assets/images/friends-hubb.svg", alt="Friends Hubb App")] to keep you connected with everyone you love. One of our goals from the beginning has been to provide a place to discover things to do and allow you to do those things with your favorite people.
+  //- Objective Section
+  .objective
+    .objective__container.l-container
+      img(class="objective__image", src="/assets/images/hubb-app.gif", alt="Hubb App Userflow")
+      p.objective__text We built #[img(class="objective__logo", loading="lazy", src="/assets/images/friends-hubb.svg", alt="Friends Hubb App")] to keep you connected with everyone you love. One of our goals from the beginning has been to provide a place to discover things to do and allow you to do those things with your favorite people.

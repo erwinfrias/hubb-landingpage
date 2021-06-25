@@ -65,6 +65,10 @@ import screenApp from './images/hubb-app.png'
 import iconHeartBorder from './images/icon-heart-border.svg'
 import iconHeartFull from './images/icon-heart-full.svg'
 
+import videoGoingOut from './images/going-out.jpg'
+import videoDate from './images/date.jpg'
+import videoDrinks from './images/drinks.jpg'
+import videoFood from './images/food.jpg'
 
 /*  CSS
 \*-------------------------------------------------------*/

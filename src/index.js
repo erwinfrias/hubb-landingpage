@@ -70,6 +70,10 @@ import videoDate from './images/date.jpg'
 import videoDrinks from './images/drinks.jpg'
 import videoFood from './images/food.jpg'
 
+import universe from './images/universe.svg'
+
+
+
 /*  CSS
 \*-------------------------------------------------------*/
 import scss from './scss/main.scss'

@@ -1,0 +1,20 @@
+/* ********** Suscribe Component ********** */
+.suscribe {
+  background: var(--primary-color) url('/assets/images/universe.svg') no-repeat;
+  background-size: 100% 100%;
+  padding: 10rem 0;
+
+  // .suscribe__container
+  &__container {
+    text-align: center;
+    color: var(--text-color-white);
+    font-family: var(--secondary-font);
+  }
+
+  // .suscribe__title
+  &__title {
+    font-size: 4rem;
+    font-style: italic;
+    margin-bottom: 5rem;
+  }
+}

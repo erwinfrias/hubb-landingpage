@@ -1,10 +1,10 @@
 .video
   .video__container
-    .video__item#going-out
-      img(class="video__image", loading="lazy", src="/assets/images/going-out.jpg", alt="Going Out with Hubb")
-    .video__item#date
-      img(class="video__image", loading="lazy", src="/assets/images/date.jpg", alt="Date with Hubb")
-    .video__item#drinks
-      img(class="video__image", loading="lazy", src="/assets/images/drinks.jpg", alt="Drinks with Hubb")
-    .video__item#food
-      img(class="video__image", loading="lazy", src="/assets/images/food.jpg", alt="Food with Hubb")
+    video(class="video__item", id="going-out", controls, poster="/assets/images/going-out.jpg")
+      source(src="/assets/videos/going-out.mp4", type="video/mp4")
+    video(class="video__item", id="date", controls, poster="/assets/images/date.jpg")
+      source(src="/assets/videos/date.mp4", type="video/mp4")
+    video(class="video__item", id="drinks", controls, poster="/assets/images/drinks.jpg")
+      source(src="/assets/videos/drinks.mp4", type="video/mp4")
+    video(class="video__item", id="food", controls, poster="/assets/images/food.jpg")
+      source(src="/assets/videos/food.mp4", type="video/mp4")

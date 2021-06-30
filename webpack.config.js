@@ -52,7 +52,11 @@ module.exports = {
         ]
       },
       {
-        test: /\.(mp4|mp3)$/i,
+        test: /\.(mp4)$/i,
+        use: 'file-loader?name=assets/videos/[name].[ext]'
+      },
+      {
+        test: /\.(mp3)$/i,
         use: 'file-loader?name=assets/media/[name].[ext]'
       },
       {

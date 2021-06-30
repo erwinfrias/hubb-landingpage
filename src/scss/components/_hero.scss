@@ -48,11 +48,6 @@
 
     @include mq(m) { font-size: 3rem; margin: 5rem auto; }
     @include mq(l) { width: 70%; }
-
-    &--landing {
-      font-size: 4rem;
-      font-weight: bolder;
-    }
   }
 
   // .hero__download
